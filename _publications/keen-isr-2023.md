@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/keen-isr-2023
 excerpt: 'This paper proposes novel sonary imagery denoising and segmentation technique.'
 date: 2023-09-27
-venue: 'Stuttgart, Germany'
+venue: '56th International Symposium on Robotics (ISR Europe 2023)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10363104'
 citation: 'Keen et. al., (2023). &quot;Denoising and Segmentation of SONAR Images for Rescue Operations.&quot; <i>56th International Symposium on Robotics (ISR Europe 2023)</i>. pp. 426-431(1).'
