@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Computer Science (Autonomous Mobile Robotics), RPTU Kaiserslautern-Landau, Kaiserslautern, Germany, 2024
-* M.S. in Electrical Engineering (Automation and Control), Lahore University of Management Science, Lahore, Pakistan, 2016
-* B.Sc. in Electrical Engineering (Electronics and Communication), University of Engineering and Technology, Lahore, Pakistan, 2013
+* **Ph.D** in Computer Science (Autonomous Mobile Robotics), RPTU Kaiserslautern-Landau, Kaiserslautern, Germany, 2024
+* **M.S.** in Electrical Engineering (Automation and Control), Lahore University of Management Science, Lahore, Pakistan, 2016
+* **B.Sc.** in Electrical Engineering (Electronics and Communication), University of Engineering and Technology, Lahore, Pakistan, 2013
 
 Work experience
 ======
