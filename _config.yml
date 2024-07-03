@@ -21,7 +21,7 @@ repository               : "HannanEjazKeen/hannanejazkeen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "bio-photo-keen"
+  avatar           : "bio-photo-keen.jpeg"
   name             : "Hannan Ejaz Keen"
   #pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
