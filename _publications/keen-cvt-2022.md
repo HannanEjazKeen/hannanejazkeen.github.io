@@ -1,9 +1,9 @@
 ---
 title: "Transferring off-road control concepts to watercraft used in flooded areas."
 collection: publications
-permalink: /publication/keen-raad-2022
+permalink: /publication/keen-cvt-2022
 excerpt: 'This paper presents ...'
-date: 2023-02-28
+date: 2022-03-08
 venue: 'Commercial Vehicle Technology 2022. ICVTS 2022.'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-658-40783-4_9'
