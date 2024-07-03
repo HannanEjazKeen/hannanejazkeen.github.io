@@ -3,7 +3,7 @@ title: "Drive on Pedestrian Walk. TUK Campus Dataset."
 collection: publications
 permalink: /publication/keen-iros-2021
 excerpt: 'This paper presents a novel offroad pedestrian area dataset.'
-date: 2023-02-28
+date: 2021-09-27
 venue: '2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-658-40783-4_9'
