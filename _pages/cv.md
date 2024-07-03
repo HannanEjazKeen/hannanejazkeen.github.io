@@ -11,21 +11,20 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Science (Autonomous Mobile Robotics), RPTU Kaiserslautern-Landau, Kaiserslautern, Germany, 2024
+* M.S. in Electrical Engineering (Automation and Control), Lahore University of Management Science, Lahore, Pakistan, 2016
+* B.Sc. in Electrical Engineering (Electronics and Communication), University of Engineering and Technology, Lahore, Pakistan, 2013
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* March 2024: Senior Researcher
+  * Xitaso GmbH.
+  * Duties includes: ...
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* September 2019 - February 2024: Research Associate
+  * RPTU Kaiserslautern-Landau, Kaiserslautern, Germany
+  * Duties included: ...
+  * Supervisor: Prof. Dr. Karsten Berns
 
 * Summer 2015: Research Assistant
   * Github University
@@ -61,4 +60,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* ...
