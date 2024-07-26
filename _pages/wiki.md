@@ -33,7 +33,6 @@ The `--rm` flag will remove this container after it exits (to save disk space), 
 Inside your docker container, publish a `/chatter` topic:
 ```
 root@154326f5f3gh:/# ros2 run demo_nodes_cpp talker
-
 ```
 
 In another terminal, start a new docker container and verify you can see the message being published.
