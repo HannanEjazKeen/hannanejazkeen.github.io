@@ -61,7 +61,7 @@ docker run -d --rm --net=ros \
 
 noVNC should now be running as a web application inside the container and listening on port `8080`. Since we have mapped that port to 8080 on the host, we should be able to see the noVNC interface at http://<host name>:8080/vnc.html . For example, if the host is our local machine then that will be `http://localhost:8080/vnc.html` . Open this in a modern web browser (not IE) and click the `Connect` button. You should see a blank desktop.
 
-We can then launch containers that run GUI programs and direct them via the noVNC server to our browser. To do this we need to include the parameters --net=ros --env="DISPLAY=novnc:0.0". Run bash in a new container on the same Docker network and direct its DISPLAY to the noVNC server:
+We can then launch containers that run GUI programs and direct them via the noVNC server to our browser. To do this we need to include the parameters `--net=ros --env="DISPLAY=novnc:0.0"`. Run bash in a new container on the same Docker network and direct its `DISPLAY` to the noVNC server:
 ```
 docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="ROS_MASTER_URI=http://roscore:11311" osrf/ros:noetic-desktop-full bash
 ```
