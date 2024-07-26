@@ -11,7 +11,10 @@ main:
     
   #- title: "Portfolio"
   #  url: /portfolio/
-        
+
+  - title: "Wiki"
+    url: /wiki/
+    
   - title: "Blog Posts"
     url: /year-archive/
     
