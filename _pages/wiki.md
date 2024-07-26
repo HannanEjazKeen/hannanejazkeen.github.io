@@ -20,7 +20,6 @@ RUN apt-get update && apt-get install -y \
 ```
 
 Go to the dockerfile directory via terminal and build the image with the name `ros2-image`.
-
 ```
 docker build -t ros2-image .
 ```
@@ -29,5 +28,15 @@ Use the following command to run a docker container
 ```
 docker run --rm -it ros2-image bash
 ```
-
 The `--rm` flag will remove this container after it exits (to save disk space), and the `-it` option will open an interactive terminal.
+
+Inside your docker container, publish a `/chatter` topic:
+```
+root@154326f5f3gh:/# ros2 run demo_nodes_cpp talker
+
+```
+
+In another terminal, start a new docker container and verify you can see the message being published.
+```
+docker run --rm -it ros2-image ros2 topic echo /chatter
+```
