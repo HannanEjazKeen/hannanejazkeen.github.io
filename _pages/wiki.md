@@ -63,12 +63,12 @@ noVNC should now be running as a web application inside the container and listen
 
 We can then launch containers that run GUI programs and direct them via the noVNC server to our browser. To do this we need to include the parameters `--net=ros --env="DISPLAY=novnc:0.0"`. Run bash in a new container on the same Docker network and direct its `DISPLAY` to the noVNC server:
 ```
-docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="ROS_MASTER_URI=http://roscore:11311" osrf/ros:noetic-desktop-full bash
+docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="ROS_MASTER_URI=http://roscore:11311" ros2-image bash
 ```
 
 Note that roscore in the last command is the name of the Docker container that we created in the last step.
 
-Then, in the bash shell, to initialise the ROS environment:
+Then, in the bash shell, to initialize the ROS environment:
 ```
 source ros_entrypoint.sh 
 ```
