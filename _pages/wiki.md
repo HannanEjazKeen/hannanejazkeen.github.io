@@ -34,7 +34,48 @@ Inside your docker container, publish a `/chatter` topic:
 root@154326f5f3gh:/# ros2 run demo_nodes_cpp talker
 ```
 
-In another terminal, start a new docker container and verify you can see the message being published.
+Start a new docker container in another terminal and verify you can see the message being published.
 ```
 docker run --rm -it ros2-image ros2 topic echo /chatter
 ```
+
+### NoVNC (web application) can be used to work with GUI.
+
+First, we need to create a Docker network that our containers can use to communicate. Let's create a Docker network called ros:
+```
+docker network create ros
+```
+
+We can launch noVNC in a Docker container using the Docker image theasp/novnc:latest. Download the image:
+```
+docker pull theasp/novnc:latest
+```
+
+Then run this image in a new container:
+```
+docker run -d --rm --net=ros \
+   --env="DISPLAY_WIDTH=3000" --env="DISPLAY_HEIGHT=1800" --env="RUN_XTERM=no" \
+   --name=novnc -p=8080:8080 \
+   theasp/novnc:latest
+```
+
+noVNC should now be running as a web application inside the container and listening on port `8080`. Since we have mapped that port to 8080 on the host, we should be able to see the noVNC interface at http://<host name>:8080/vnc.html . For example, if the host is our local machine then that will be `http://localhost:8080/vnc.html` . Open this in a modern web browser (not IE) and click the `Connect` button. You should see a blank desktop.
+
+We can then launch containers that run GUI programs and direct them via the noVNC server to our browser. To do this we need to include the parameters --net=ros --env="DISPLAY=novnc:0.0". Run bash in a new container on the same Docker network and direct its DISPLAY to the noVNC server:
+```
+docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="ROS_MASTER_URI=http://roscore:11311" osrf/ros:noetic-desktop-full bash
+```
+
+Note that roscore in the last command is the name of the Docker container that we created in the last step.
+
+Then, in the bash shell, to initialise the ROS environment:
+```
+source ros_entrypoint.sh 
+```
+
+Then, for example, to run rviz in the bash shell:
+```
+rosrun rviz rviz
+```
+
+The rviz UI should appear in the browser.
