@@ -11,11 +11,28 @@ redirect_from:
 
 Create a docker file with the name `Dockerfile` and the following content
 ```
-FROM ros:jazzy-ros-core
+FROM ros:humble-ros-core
 RUN apt-get update && apt-get install -y \
-    ros-jazzy-demo-nodes-cpp \
-    ros-jazzy-tf2-ros \
-    ros-jazzy-desktop
+    ros-humble-demo-nodes-cpp \
+    ros-humble-tf2-ros \
+    ros-humble-desktop \
+    python3-colcon-common-extensions \
+    git
+
+RUN mkdir -p ~/ros2_ws/src
+WORKDIR "~/ros2_ws"
+RUN git clone https://github.com/ros2/examples src/examples -b humble
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN apt-get install -y python3-rosdep
+RUN rosdep init
+RUN rosdep update
+RUN rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers"
+RUN echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
+RUN echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
+RUN . /opt/ros/humble/setup.sh
+#Following command has two reasons 1) source should be at same command with build else it does not source 2) --executor is sequential because the build crash due to very limited ram (8Gb)
+RUN /bin/bash -c "source /opt/ros/humble/setup.bash; MAKEFLAGS='-j1 -l1'; colcon build --executor sequential --symlink-install"
+RUN echo "source install/setup.bash" >> ~/.bashrc
 ```
 
 Go to the dockerfile directory via terminal and build the image with the name `ros2-image`.
