@@ -75,7 +75,7 @@ source ros_entrypoint.sh
 
 Then, for example, to run rviz in the bash shell:
 ```
-rosrun rviz rviz
+ros2 run rviz2 rviz2
 ```
 
 The rviz UI should appear in the browser.
