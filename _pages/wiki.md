@@ -96,3 +96,17 @@ ros2 run rviz2 rviz2
 ```
 
 The rviz UI should appear in the browser.
+
+## Creating ROS2 Python package with launch files
+
+```
+ros2 pkg create launch_tutorial --build-type ament_python
+```
+
+```
+cd launch_tutorial
+```
+
+```
+mkdir launch
+```
