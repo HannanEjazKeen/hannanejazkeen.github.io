@@ -4,8 +4,8 @@ main:
   - title: "CV"
     url: /files/Hannan_Ejaz_Keen_Resume.pdf
   
-  - title: "Publications"
-    url: /publications/
+  #- title: "Publications"
+  #  url: /publications/
 
   #- title: "Talks"
   #  url: /talks/    
@@ -19,8 +19,8 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/
 
-  - title: "Wiki"
-    url: /wiki/
+  # - title: "Wiki"
+  #  url: /wiki/
