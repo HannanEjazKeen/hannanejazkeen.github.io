@@ -24,8 +24,8 @@ author:
   avatar           : "bio-photo-keen.jpeg"
   name             : "Hannan Ejaz Keen"
   #pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Kaiserslautern, Germany"
+  bio              : "Machine Learning Engineer specializing in real-time perception and autonomous systems across land, air, and water"
+  location         : "Karlsruhe, Germany"
   employer         : "Xitaso GmbH"
   #uri              : # URL
   #email            : "none@example.org" 
@@ -203,9 +203,9 @@ collections:
 #  teaching:
 #    output: true
 #    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
+#  publications:
+#    output: true
+#    permalink: /:collection/:path/
 #  portfolio:
 #    output: true
 #    permalink: /:collection/:path/
